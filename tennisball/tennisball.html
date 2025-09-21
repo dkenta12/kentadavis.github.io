@@ -1,0 +1,226 @@
+<div id="container">
+    <div id="headerArea">
+        <div id="header">
+            <h1>Tennis Ball Following Robot</h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="../index.html">Return to main</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="flex">
+
+        <main>
+            <p>To complete my mechatronics project at the end of the year, my group mate and built a tennis ball following robot.</p>
+            <p>The thought behind the project was to create something that utilizes a lot of what was learned in the class and yet simple enough to complete entirely within 2 weeks.</p>
+            <p>The project uses the Texas Instruments MSP432 which receives data from a Open MV M7 Camera over UART protocol. Using this information, the MSP432 commands the motors to drive. </p>
+            <p>The robot worked amazingly well, and could very quickly identify the yellow shape, rotate to point towards the ball, and move forward to the ball. Even upon rolling the ball down the hallway, the robot would successfully chase it, sometimes reaching the ball before I could reach it.</p>
+            <img src="Slide1.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide2.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide3.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide4.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide5.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide6.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide7.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide8.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide10.JPG" width="600px" height="300px" class="centerimg">
+            <img src="Slide16.JPG" width="600px" height="300px" class="centerimg">
+
+
+            <a href="../index.html">Return to main</a>
+
+        </main>
+
+
+    </div>
+    <footer id="footer" style="color: #13092D;">this is the footer, but you can't read this text</footer>
+</div>
+
+
+<!-- THIS IS THE CSS !-->
+<style>
+    :root {
+        /*       --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+        --body-bg-image: url('https://sadhost.neocities.org/images/tiles/bck-crackle.gif');
+
+        /* colors */
+        --content: #6a00ff;
+    }
+
+    */ body {
+        font-family: 'Times New Roman';
+        margin: 0;
+        background-color: #ffffff;
+        background-size: 65px;
+        color: #000000;
+        background-image: var(--body-bg-image);
+    }
+
+    /* the "container" is what wraps your entire website */
+    /* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+    #container {
+        max-width: 900px;
+        /* this is the width of your layout! */
+        /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+        margin: 0 auto;
+        /* this centers the entire page */
+    }
+
+    /* the area below is for all links on your page
+EXCEPT for the navigation */
+    #container a {
+        color: #000000;
+        font-weight: bold;
+    }
+
+    #header {
+        width: 100%;
+        background-color: #ffffff;
+        height: 50px;
+        background-image: var(--header-image);
+        background-size: 100%;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    /*Navbar is currently being used as a single item serving as the large title*/
+    #navbar {
+        height: 25px;
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    #navbar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+    #navbar li {
+        padding-top: 10px;
+    }
+
+    /* navigation links*/
+    #navbar li a {
+        color: #000000;
+        /* navbar text color */
+        font-weight: 100;
+        text-decoration: none;
+        font-size: 15px;
+        /* this removes the underline */
+    }
+
+    /* navigation link when a link is hovered over */
+    #navbar li a:hover {
+        color: #a49cba;
+        text-decoration: underline;
+    }
+
+    li a {
+        color: #000000;
+        font-weight: 50;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: #a49cba;
+        text-decoration: underline;
+    }
+
+    #flex {
+        display: flex;
+    }
+
+
+    /* this is the color of the main content area,
+between the sidebars! */
+    main {
+        background-color: #ffffff;
+        flex: 1;
+        padding: 20px;
+        order: 2;
+    }
+
+    .centerimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        background-color: #13092D;
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #000000;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    strong {
+        /* this styles bold text */
+        color: #000000;
+    }
+
+    .box {
+        background-color: #ffffff;
+        border: 5px solid #000000;
+        padding: 10px;
+    }
+
+    /* CSS for extras */
+
+    #topBar {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        font-size: smaller;
+        background-color: #13092D;
+    }
+
+
+    /* BELOW THIS POINT IS MEDIA QUERY */
+
+    /* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+    @media only screen and (max-width: 800px) {
+        #flex {
+            flex-wrap: wrap;
+        }
+
+        /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+        main {
+            order: 1;
+        }
+
+        #navbar ul {
+            flex-wrap: wrap;
+        }
+    }
+</style>

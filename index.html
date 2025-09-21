@@ -1,0 +1,298 @@
+<div id="container">
+    <div id="headerArea">
+        <div id="header"></div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">welcome to my personal website</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="flex">
+        <aside id="leftSidebar">
+            <!--put this here to serve as a spacer to center webpage-->
+        </aside>
+
+        <!--Middle Column-->
+        <main>
+            <h1>My name is Kenta Davis and this is my website!</h1>
+            <p>My goal with this website is to have a space to publically log my projects, hobbies, intersets, and other
+                fun items that I want to show off. I've been wanting to have a website for a few years now and having
+                graduated college I feel I have free time to begin branching out to non mechincal engineering related
+                projects such as building a simple html website. </p>
+
+            <h2>About Me</h2>
+            <p>I am 24 years old and graduated from the Georgia Institute of Technology with a Bachelors Degree in
+                Mechanical Engineering and a Minor in Architecture. I currently work at Joby Aviation as a Testing Equipment Design Engineer. 
+                I have many things that I am interested in. The few largest that take up much of my time are aviation and rock climbing. I have many
+                projects in the topics listed and many more that you'll find below.</p>
+            <h2 style="margin-bottom:0;">Stuff</h2>
+            <ul>
+                <li><a href="sstv/iss_sstv.html" target="_blank">7/21/2025 ISS SSTV</a></li>
+                <li><a href="noaa/noaa.html" target="_blank">3/20/2025 NOAA Satellites</a></li>
+                <li><a href="salamander/salamanders.html" target="_blank">12/24/2024 Salamander Hunting</a></li>
+                <li><a href="shorts_destroyer/shorts.html" target="_blank">1/2/2024 Youtube Shorts Destroyer Chrome Extension</a></li>
+                <li><a href="tennisball/tennisball.html" target="_blank">12/5/2023 Tennis Ball Following Robot</a></li>
+                <li><a href="capstone/capstone.html" target="_blank">2023 Capstone Project: Powered Wheelchair Airline Transport Device</a></li>
+                <li><a href="inprogress.html" target="_blank">9/28/2022 Model Rocket</a></li>
+                <li><a href="inprogress.html" target="_blank">7/10/2022 Rocketry Club Structures Team</a></li>
+                <li><a href="inprogress.html" target="_blank">4/2/2021 ME2110 Robot Design Competition</a></li>
+                <li><a href="inprogress.html" target="_blank">2018-2020 Churro Bol!</a></li>
+                
+
+
+
+            </ul>
+            </main>
+
+        <!--Right Sidebar-->
+        <aside id="rightSidebar">
+            <p>&nbsp</p>
+            <h2 style="margin-bottom:0;">Social Media</h2>
+            <a href="https://www.linkedin.com/in/kenta-davis/">
+                <img src="linkedin_icon2.PNG" / alt="linkedin_icon" width="80" height="20">
+            </a>
+  <!--          <a href="https://kenta.atabook.org/">
+                <img src="https://bonkiscoolsite.neocities.org/images/geocitystuff/misc/guestbookbutton.gif" /
+                    alt="guestbook icon" width="80" height="30">
+            </a> -->
+            <h2 style="margin-bottom:0;">Changelog</h2>
+            <div class="box">
+                <ul style="padding-left:10px; margin-top: 5px;">
+                    <li>Dec.18.2024: Built the site</li>
+                </ul>
+            </div>
+            <!--<h5>© Copyright KentaDavis 2024</h5>
+            <h5>Hosted under MarkMcKessock's bedroom server</h5> !-->
+
+    <!--        <hr width="100%" size="2">
+            <a href="https://thecorporation.neocities.org/oneoffs/96/kittylick3/kittylick3">
+                <img src="catimage.jpg" alt="cat ad" width="200" height="200" />
+            </a>
+        -->
+        </aside>
+    </div>
+    <footer id="footer" style="color: #13092D;">this is the footer, but you can't read this text</footer>
+</div>
+
+
+<!-- THIS IS THE CSS !-->
+<style>
+    :root {
+        /*       --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+        --body-bg-image: url('https://sadhost.neocities.org/images/tiles/bck-crackle.gif');
+
+        /* colors */
+                --content: #6a00ff;
+    }
+*/
+        body {
+            font-family: 'Times New Roman';
+            margin: 0;
+            background-color: #ffffff;
+            background-size: 65px;
+            color: #000000;
+            background-image: var(--body-bg-image);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* the "container" is what wraps your entire website */
+        /* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+        #container {
+            max-width: 900px;
+            /* this is the width of your layout! */
+            /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+            margin: 0 auto;
+            /* this centers the entire page */
+        }
+
+        /* the area below is for all links on your page
+EXCEPT for the navigation */
+        #container a {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        #header {
+            width: 100%;
+            background-color: #ffffff;
+            height: 20px;
+            background-image: var(--header-image);
+            background-size: 100%;
+        }
+
+        /*Navbar is currently being used as a single item serving as the large title*/
+        #navbar {
+            height: 70px;
+            background-color: #ffffff;
+            width: 100%;
+        }
+        #navbar ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+        #navbar li {
+            padding-top: 10px;
+        }
+
+        /* navigation links*/
+        #navbar li a {
+            color: #000000;
+            /* navbar text color */
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 50px;
+            /* this removes the underline */
+        }
+
+        /* navigation link when a link is hovered over */
+        #navbar li a:hover {
+            color: #a49cba;
+            text-decoration: underline;
+        }
+
+        /* making dashes instead of dots for unordered lists*/
+        ul.dashed {
+            list-style-type: none;
+        }
+        ul.dashed>li {
+            text-indent: -5px;
+        }
+        ul.dashed>li:before {
+            content: "-";
+            text-indent: -5px;
+        }
+
+        li a {
+            color: #000000;
+            font-weight: 50;
+            text-decoration: none;
+        }
+        li a:hover {
+            color: #a49cba;
+            text-decoration: underline;
+        }
+        #flex {
+            display: flex;
+        }
+
+        /* this colors BOTH sidebars
+if you want to style them separately,
+create styles for #leftSidebar and #rightSidebar */
+        aside {
+            background-color: #ffffff;
+            width: 200px;
+            padding: 20px;
+            font-size: smaller;
+        }
+
+
+        /* this is the color of the main content area,
+between the sidebars! */
+        main {
+            background-color: #ffffff;
+            flex: 1;
+            padding: 20px;
+            order: 2;
+        }
+
+        /* if you're using both sidebars, the "order" value
+tells the CSS the order in which to display them.
+left sidebar is 1, content is 2, and right sidebar is 3! */
+
+        */ #leftSidebar {
+            order: 1;
+        }
+
+        #rightSidebar {
+            order: 3;
+        }
+
+        footer {
+            background-color: #13092D;
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #000000;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        strong {
+            /* this styles bold text */
+            color: #000000;
+        }
+
+        .box {
+            background-color: #ffffff;
+            border: 5px solid #000000;
+            padding: 10px;
+        }
+
+        /* CSS for extras */
+
+        #topBar {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            font-size: smaller;
+            background-color: #13092D;
+        }
+
+
+        /* BELOW THIS POINT IS MEDIA QUERY */
+
+        /* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+        @media only screen and (max-width: 800px) {
+            #flex {
+                flex-wrap: wrap;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+            main {
+                order: 1;
+            }
+
+            #leftSidebar {
+                order: 2;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            #navbar ul {
+                flex-wrap: wrap;
+            }
+        }
+</style>
