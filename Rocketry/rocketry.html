@@ -1,0 +1,236 @@
+<div id="container">
+    <div id="headerArea">
+        <div id="header">
+            <h1>Rocketry</h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="../index.html">Return to main</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="flex">
+
+        <main>
+            <p>During college, I spent much of my free time seeing through a hobby in rocketry. I worked on 3 projects, one space shot vehicle with the Georgia Tech Experimental Rocketry club working to launch a 2 stage rocket to the Karman Line. I also worked on 2 personal rockets, one with Estes tiny rocket motors and one through High Power Rocketry to earn an L1 rocketry license.</p>
+            <h2>Georgia Tech Experimental Rocketry Club</h2>
+            <p>Space Shot Vehicle</p>
+            <img src="mrbluesky_preflight.png" class="centerimg centerimg--wide">
+
+            <h2>Personal Home Built Rocket</h2>
+            <p>I built this personal rocket as a design sprint to quickly build and fly my own rocket in under a week. I purchased 3 motors C-class motors (~10Nsec impulse) and while waiting for the shipment to arrive, I designed the rocket around the motor. The final rocket was painted orange and white to match the SLS rocket which was launching for the first time that same year.</p>
+            <img src="personalrocket_table.png" class="centerimg">
+            <p>I made the simulation of this rocket in a software called OpenRocket, which uses assigned masses and geometries to simulate the rockets maximum altitude and stability. This software is super lightweight and easy to use, and I highly recomend it to anyone looking to quickly put together a basic design for their rocket. One difficulty of this design is converging to a final design. Initially, I had to guess what weight the body tube, noze cone, and fins would be, and my design had to be flexible in order to account for changes in mass once I finally made my design and assembled it. My solution to this was to predict the mass of each component, and leave the length of the body and the mass of the noze cone variable so as to adjust the stability of the rocket right up until every variable was defined. </p>
+            <img src="personalrocket_openrocket.png" class="centerimg">
+            <p>Finally I crafted the rocket. I used 1/2" PVC pipe as the body (which for clarity is dangerous to do, PVC shatters when broken which will cause shrapnel if the motor experiences failure), and 3d printed PLA for the nose cone and the fins. To adjust the mass of the nose cone as desired, I could adjust the infill of the nose to exactly what I would need. The nose cone press fit into the PVC pipe and the fin assembly interference fit and glued over the exterior of the pipe.</p>
+            <img src="personalrocket_cad.png" class="centerimg">
+
+            <h2>High Power Rocketry</h2>
+            <p>I also was on my way to complete my L1 rocket certification with the completion of a scratch built rocket. The certification allows holders to launch rockets with impulse higher than 160N-sec, rockets heavier than 1500 grams, or launch rockets with multiple motors. To earn an L1, I was required to launch a class H or class I motor at an aproved NAR launch. The launch will require me to pass an inspeciton before flight and to successfully recover my launched rocket after a witnessed flight. The rocket must be returned for a final inspection to verify engine retention and minimal damage. I designed my L1 rocket to be comically tall with a 90 inch height and a meager apogee of 1200ft of course due to the added mass from the rocket length. I was able to create the design in open rocket, printed my nose cone, and even assembled my fin can. Unfortunately I was unable to finish the project as I left in spring semester for an internship.</p>
+            <img src="HPR_level1.png" class="centerimg centerimg--wide">
+            <img src="HPR_cad.png" class="centerimg">
+            <img src="HPR_glue2.png" class="centerimg">
+
+            <a href="../index.html">Return to main</a>
+        </main>
+
+
+    </div>
+    <footer id="footer" style="color: #13092D;">this is the footer, but you can't read this text</footer>
+</div>
+
+
+<!-- THIS IS THE CSS !-->
+<style>
+    :root {
+
+        /* colors */
+        --content: #6a00ff;
+        background-color: #13092D;
+    }
+
+    */ body {
+        font-family: 'Times New Roman';
+        margin: 0;
+        background-color: #ffffff;
+        background-size: 65px;
+        color: #000000;
+      /*  background-image: var(--body-bg-image);*/
+    }
+
+    /* the "container" is what wraps your entire website */
+    /* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+    #container {
+        max-width: 1000px;
+        /* this is the width of your layout! */
+        /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+        margin: 0 auto;
+        /* this centers the entire page */
+    }
+
+    /* the area below is for all links on your page
+EXCEPT for the navigation */
+    #container a {
+        color: #000000;
+        font-weight: bold;
+    }
+
+    #header {
+        width: 100%;
+        background-color: #ffffff;
+        height: 50px;
+        background-image: var(--header-image);
+        background-size: 100%;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    /*Navbar is currently being used as a single item serving as the large title*/
+    #navbar {
+        height: 25px;
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    #navbar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+    #navbar li {
+        padding-top: 10px;
+    }
+
+    /* navigation links*/
+    #navbar li a {
+        color: #000000;
+        /* navbar text color */
+        font-weight: 100;
+        text-decoration: none;
+        font-size: 15px;
+        /* this removes the underline */
+    }
+
+    /* navigation link when a link is hovered over */
+    #navbar li a:hover {
+        color: #a49cba;
+        text-decoration: underline;
+    }
+
+    li a {
+        color: #000000;
+        font-weight: 50;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: #a49cba;
+        text-decoration: underline;
+    }
+
+    #flex {
+        display: flex;
+    }
+
+
+    /* this is the color of the main content area,
+between the sidebars! */
+    main {
+        background-color: #ffffff;
+        flex: 1;
+        padding: 20px;
+        order: 2;
+    }
+
+    .centerimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        padding-bottom: 10px;
+    }
+
+    .centerimg--wide {
+        width: 100%;
+        max-width: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+
+    footer {
+        background-color: #13092D;
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #000000;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    strong {
+        /* this styles bold text */
+        color: #000000;
+    }
+
+    .box {
+        background-color: #ffffff;
+        border: 5px solid #000000;
+        padding: 10px;
+    }
+
+    /* CSS for extras */
+
+    #topBar {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        font-size: smaller;
+        background-color: #13092D;
+    }
+
+
+    /* BELOW THIS POINT IS MEDIA QUERY */
+
+    /* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+    @media only screen and (max-width: 800px) {
+        #flex {
+            flex-wrap: wrap;
+        }
+
+        /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+        main {
+            order: 1;
+        }
+
+        #navbar ul {
+            flex-wrap: wrap;
+        }
+    }
+</style>
