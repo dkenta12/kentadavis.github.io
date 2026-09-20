@@ -1,128 +1,92 @@
 <div id="container">
-    <div id="headerArea">
-        <div id="header">
-            <h1>Rocketry</h1>
-        </div>
+    <aside id="leftSidebar">
+        <h2 id="siteName">Kenta Davis</h2>
         <nav id="navbar">
             <ul>
-                <li><a href="../index.html">Return to main</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sstv/iss_sstv.html">ISS SSTV</a></li>
+                <li><a href="../noaa/noaa.html">NOAA Satellites</a></li>
+                <li><a href="../salamander/salamanders.html">Salamander Hunting</a></li>
+                <li><a href="../climbing/climbing_landing.html">Rock Climbing</a></li>
+                <li><a href="../shorts_destroyer/shorts.html">Youtube Shorts Destroyer</a></li>
+                <li><a href="../tennisball/tennisball.html">Tennis Ball Following Robot</a></li>
+                <li><a href="../capstone/capstone.html">Capstone Project</a></li>
+                <li><a href="../Rocketry/rocketry.html">Rocketry</a></li>
+                <li><a href="https://dkenta12.github.io/kentabikeguide/index.html" target="_blank" rel="noopener noreferrer">Kenta's Bike Guide</a></li>
+                <!-- <li><a href="../inprogress.html">ME2110 Robot Design Competition</a></li> -->
+                <!-- <li><a href="../inprogress.html">Churro Bol!</a></li> -->
+                <!-- <li><a href="../inprogress.html">1956 literacy test!</a></li> -->
+                <!-- <li><a href="../inprogress.html">e-Ink frame!</a></li> -->
+                <!-- <li><a href="../inprogress.html">pottery!</a></li> -->
             </ul>
         </nav>
-    </div>
+        <div id="sidebarSocial">
+            <a href="https://www.linkedin.com/in/kenta-davis/">
+                <img src="../linkedin_icon2.PNG" alt="linkedin_icon" width="80" height="20">
+            </a>
+        </div>
+    </aside>
 
-    <div id="flex">
+    <!--Right Column-->
+    <main>
+        <h1 class="pageTitle">Rocketry</h1>
 
-        <main>
-            <p>During college, I spent much of my free time seeing through a hobby in rocketry. I worked on 3 projects, one space shot vehicle with the Georgia Tech Experimental Rocketry club working to launch a 2 stage rocket to the Karman Line. I also worked on 2 personal rockets, one with Estes tiny rocket motors and one through High Power Rocketry to earn an L1 rocketry license.</p>
-            <h2>Georgia Tech Experimental Rocketry Club</h2>
-            <p>Space Shot Vehicle</p>
-            <img src="mrbluesky_preflight.png" class="centerimg centerimg--wide">
+        <p>During college, I spent much of my free time seeing through a hobby in rocketry. I worked on 3 projects, one space shot vehicle with the Georgia Tech Experimental Rocketry club working to launch a 2 stage rocket to the Karman Line. I also worked on 2 personal rockets, one with Estes tiny rocket motors and one through High Power Rocketry to earn an L1 rocketry license.</p>
+        <h2>Georgia Tech Experimental Rocketry Club</h2>
+        <p>Space Shot Vehicle</p>
+        <img src="mrbluesky_preflight.png" class="centerimg centerimg--wide">
 
-            <h2>Personal Home Built Rocket</h2>
-            <p>I built this personal rocket as a design sprint to quickly build and fly my own rocket in under a week. I purchased 3 motors C-class motors (~10Nsec impulse) and while waiting for the shipment to arrive, I designed the rocket around the motor. The final rocket was painted orange and white to match the SLS rocket which was launching for the first time that same year.</p>
-            <img src="personalrocket_table.png" class="centerimg">
-            <p>I made the simulation of this rocket in a software called OpenRocket, which uses assigned masses and geometries to simulate the rockets maximum altitude and stability. This software is super lightweight and easy to use, and I highly recomend it to anyone looking to quickly put together a basic design for their rocket. One difficulty of this design is converging to a final design. Initially, I had to guess what weight the body tube, noze cone, and fins would be, and my design had to be flexible in order to account for changes in mass once I finally made my design and assembled it. My solution to this was to predict the mass of each component, and leave the length of the body and the mass of the noze cone variable so as to adjust the stability of the rocket right up until every variable was defined. </p>
-            <img src="personalrocket_openrocket.png" class="centerimg">
-            <p>Finally I crafted the rocket. I used 1/2" PVC pipe as the body (which for clarity is dangerous to do, PVC shatters when broken which will cause shrapnel if the motor experiences failure), and 3d printed PLA for the nose cone and the fins. To adjust the mass of the nose cone as desired, I could adjust the infill of the nose to exactly what I would need. The nose cone press fit into the PVC pipe and the fin assembly interference fit and glued over the exterior of the pipe.</p>
-            <img src="personalrocket_cad.png" class="centerimg">
+        <h2>Personal Home Built Rocket</h2>
+        <p>I built this personal rocket as a design sprint to quickly build and fly my own rocket in under a week. I purchased 3 motors C-class motors (~10Nsec impulse) and while waiting for the shipment to arrive, I designed the rocket around the motor. The final rocket was painted orange and white to match the SLS rocket which was launching for the first time that same year.</p>
+        <img src="personalrocket_table.png" class="centerimg">
+        <p>I made the simulation of this rocket in a software called OpenRocket, which uses assigned masses and geometries to simulate the rockets maximum altitude and stability. This software is super lightweight and easy to use, and I highly recomend it to anyone looking to quickly put together a basic design for their rocket. One difficulty of this design is converging to a final design. Initially, I had to guess what weight the body tube, noze cone, and fins would be, and my design had to be flexible in order to account for changes in mass once I finally made my design and assembled it. My solution to this was to predict the mass of each component, and leave the length of the body and the mass of the noze cone variable so as to adjust the stability of the rocket right up until every variable was defined. </p>
+        <img src="personalrocket_openrocket.png" class="centerimg">
+        <p>Finally I crafted the rocket. I used 1/2" PVC pipe as the body (which for clarity is dangerous to do, PVC shatters when broken which will cause shrapnel if the motor experiences failure), and 3d printed PLA for the nose cone and the fins. To adjust the mass of the nose cone as desired, I could adjust the infill of the nose to exactly what I would need. The nose cone press fit into the PVC pipe and the fin assembly interference fit and glued over the exterior of the pipe.</p>
+        <img src="personalrocket_cad.png" class="centerimg">
 
-            <h2>High Power Rocketry</h2>
-            <p>I also was on my way to complete my L1 rocket certification with the completion of a scratch built rocket. The certification allows holders to launch rockets with impulse higher than 160N-sec, rockets heavier than 1500 grams, or launch rockets with multiple motors. To earn an L1, I was required to launch a class H or class I motor at an aproved NAR launch. The launch will require me to pass an inspeciton before flight and to successfully recover my launched rocket after a witnessed flight. The rocket must be returned for a final inspection to verify engine retention and minimal damage. I designed my L1 rocket to be comically tall with a 90 inch height and a meager apogee of 1200ft of course due to the added mass from the rocket length. I was able to create the design in open rocket, printed my nose cone, and even assembled my fin can. Unfortunately I was unable to finish the project as I left in spring semester for an internship.</p>
-            <img src="HPR_level1.png" class="centerimg centerimg--wide">
-            <img src="HPR_cad.png" class="centerimg">
-            <img src="HPR_glue2.png" class="centerimg">
+        <h2>High Power Rocketry</h2>
+        <p>I also was on my way to complete my L1 rocket certification with the completion of a scratch built rocket. The certification allows holders to launch rockets with impulse higher than 160N-sec, rockets heavier than 1500 grams, or launch rockets with multiple motors. To earn an L1, I was required to launch a class H or class I motor at an aproved NAR launch. The launch will require me to pass an inspeciton before flight and to successfully recover my launched rocket after a witnessed flight. The rocket must be returned for a final inspection to verify engine retention and minimal damage. I designed my L1 rocket to be comically tall with a 90 inch height and a meager apogee of 1200ft of course due to the added mass from the rocket length. I was able to create the design in open rocket, printed my nose cone, and even assembled my fin can. Unfortunately I was unable to finish the project as I left in spring semester for an internship.</p>
+        <img src="HPR_level1.png" class="centerimg centerimg--wide">
+        <img src="HPR_cad.png" class="centerimg">
+        <img src="HPR_glue2.png" class="centerimg">
 
-            <a href="../index.html">Return to main</a>
-        </main>
-
-
-    </div>
-    <footer id="footer" style="color: #13092D;">this is the footer, but you can't read this text</footer>
+        <a href="../index.html">Return to main</a>
+    </main>
 </div>
+<footer id="footer" style="color: #13092D;">this is the footer, but you can't read this text</footer>
 
 
 <!-- THIS IS THE CSS !-->
 <style>
     :root {
-
-        /* colors */
-        --content: #6a00ff;
-        background-color: #13092D;
+        --sidebar-width: 240px;
     }
 
-    */ body {
-        font-family: 'Times New Roman';
+    html, body {
         margin: 0;
+        min-height: 100%;
+    }
+
+    body {
+        font-family: 'Times New Roman';
         background-color: #ffffff;
         background-size: 65px;
         color: #000000;
-      /*  background-image: var(--body-bg-image);*/
     }
 
-    /* the "container" is what wraps your entire website */
-    /* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
+    * {
+        box-sizing: border-box;
+    }
+
     #container {
-        max-width: 1000px;
-        /* this is the width of your layout! */
-        /* if you change the above value, scroll to the bottom
-and change the media query according to the comment! */
+        display: flex;
+        max-width: 1150px;
         margin: 0 auto;
-        /* this centers the entire page */
     }
 
-    /* the area below is for all links on your page
-EXCEPT for the navigation */
     #container a {
         color: #000000;
         font-weight: bold;
-    }
-
-    #header {
-        width: 100%;
-        background-color: #ffffff;
-        height: 50px;
-        background-image: var(--header-image);
-        background-size: 100%;
-        font-size: 40px;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    /*Navbar is currently being used as a single item serving as the large title*/
-    #navbar {
-        height: 25px;
-        background-color: #ffffff;
-        width: 100%;
-    }
-
-    #navbar ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        justify-content: space-evenly;
-    }
-
-    #navbar li {
-        padding-top: 10px;
-    }
-
-    /* navigation links*/
-    #navbar li a {
-        color: #000000;
-        /* navbar text color */
-        font-weight: 100;
-        text-decoration: none;
-        font-size: 15px;
-        /* this removes the underline */
-    }
-
-    /* navigation link when a link is hovered over */
-    #navbar li a:hover {
-        color: #a49cba;
-        text-decoration: underline;
     }
 
     li a {
@@ -136,18 +100,58 @@ EXCEPT for the navigation */
         text-decoration: underline;
     }
 
-    #flex {
+    #leftSidebar {
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        width: var(--sidebar-width);
+        height: 100vh;
+        flex-shrink: 0;
+        background-color: #ffffff;
+        padding: 30px 20px;
         display: flex;
+        flex-direction: column;
+        font-size: smaller;
     }
 
+    #siteName {
+        color: #000000;
+        font-weight: 100;
+        font-size: 32px;
+        margin: 0 0 20px 0;
+    }
 
-    /* this is the color of the main content area,
-between the sidebars! */
+    #navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 10px;
+    }
+
+    #navbar li a {
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    #sidebarSocial {
+        margin-top: auto;
+        padding-top: 20px;
+    }
+
     main {
         background-color: #ffffff;
         flex: 1;
-        padding: 20px;
-        order: 2;
+        min-width: 0;
+        padding: 30px 40px;
+    }
+
+    .pageTitle {
+        font-weight: normal;
+        font-size: 32px;
+        margin-top: 0;
     }
 
     .centerimg {
@@ -164,7 +168,6 @@ between the sidebars! */
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        
     }
 
     footer {
@@ -179,14 +182,10 @@ between the sidebars! */
     h2,
     h3 {
         color: #000000;
-    }
-
-    h1 {
-        font-size: 25px;
+        font-weight: normal;
     }
 
     strong {
-        /* this styles bold text */
         color: #000000;
     }
 
@@ -196,41 +195,19 @@ between the sidebars! */
         padding: 10px;
     }
 
-    /* CSS for extras */
-
-    #topBar {
-        width: 100%;
-        height: 30px;
-        padding: 10px;
-        font-size: smaller;
-        background-color: #13092D;
-    }
-
-
-    /* BELOW THIS POINT IS MEDIA QUERY */
-
-    /* so you wanna change the width of your page? 
-by default, the container width is 900px.
-in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
-"max-width" value below
-*/
-
     @media only screen and (max-width: 800px) {
-        #flex {
-            flex-wrap: wrap;
+        #container {
+            flex-direction: column;
         }
 
-        /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
+        #leftSidebar {
+            position: static;
+            width: 100%;
+            height: auto;
+        }
+
         main {
-            order: 1;
-        }
-
-        #navbar ul {
-            flex-wrap: wrap;
+            padding: 20px;
         }
     }
 </style>
