@@ -1,117 +1,81 @@
 <div id="container">
-    <div id="headerArea">
-        <div id="header">
-            <h1>Youtube Shorts Destroyer</h1>
-            <h1>Chrome Extension</h1>
-        </div>
+    <aside id="leftSidebar">
+        <h2 id="siteName">Kenta Davis</h2>
         <nav id="navbar">
             <ul>
-                <li><a href="../index.html">Return to main</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sstv/iss_sstv.html">ISS SSTV</a></li>
+                <li><a href="../noaa/noaa.html">NOAA Satellites</a></li>
+                <li><a href="../salamander/salamanders.html">Salamander Hunting</a></li>
+                <li><a href="../climbing/climbing_landing.html">Rock Climbing</a></li>
+                <li><a href="../shorts_destroyer/shorts.html">Youtube Shorts Destroyer</a></li>
+                <li><a href="../tennisball/tennisball.html">Tennis Ball Following Robot</a></li>
+                <li><a href="../capstone/capstone.html">Capstone Project</a></li>
+                <li><a href="../Rocketry/rocketry.html">Rocketry</a></li>
+                <li><a href="https://dkenta12.github.io/kentabikeguide/index.html" target="_blank" rel="noopener noreferrer">Kenta's Bike Guide</a></li>
+                <!-- <li><a href="../inprogress.html">ME2110 Robot Design Competition</a></li> -->
+                <!-- <li><a href="../inprogress.html">Churro Bol!</a></li> -->
+                <!-- <li><a href="../inprogress.html">1956 literacy test!</a></li> -->
+                <!-- <li><a href="../inprogress.html">e-Ink frame!</a></li> -->
+                <!-- <li><a href="../inprogress.html">pottery!</a></li> -->
             </ul>
         </nav>
-    </div>
+        <div id="sidebarSocial">
+            <a href="https://www.linkedin.com/in/kenta-davis/">
+                <img src="../linkedin_icon2.PNG" alt="linkedin_icon" width="80" height="20">
+            </a>
+        </div>
+    </aside>
 
-    <div id="flex">
+    <!--Right Column-->
+    <main>
+        <h1 class="pageTitle">Youtube Shorts Destroyer</h1>
+        <h1 class="pageTitle">Chrome Extension</h1>
 
-        <main>
-            <p>In the spring of 2023, I created a google chrome extension!s The extension would ban youtube shorts from your computer, playing any shorts content in the regular youtube player to prevent the user from doom scrolling </p>
-            <p>I created this extension after I noticed shorts were always played with the url "youtube.com/shorts/*videocode* </p>
-            <p>The extension would check the url request as it was made and it would replace "youtube.com/shorts/..." with "youtube.com/..." to force the short into a regular video player.</p>
-            <p>https://chromewebstore.google.com/detail/youtube-shorts-destroyer/gmgcdfpchmccifpfbbcjaeknaannknjd?authuser=1&hl=en 
-            </p>
+        <p>In the spring of 2023, I created a google chrome extension!s The extension would ban youtube shorts from your computer, playing any shorts content in the regular youtube player to prevent the user from doom scrolling </p>
+        <p>I created this extension after I noticed shorts were always played with the url "youtube.com/shorts/*videocode* </p>
+        <p>The extension would check the url request as it was made and it would replace "youtube.com/shorts/..." with "youtube.com/..." to force the short into a regular video player.</p>
+        <p>https://chromewebstore.google.com/detail/youtube-shorts-destroyer/gmgcdfpchmccifpfbbcjaeknaannknjd?authuser=1&hl=en
+        </p>
 
-            <a href="../index.html">Return to main</a>
-
-        </main>
-
-
-    </div>
-    <footer id="footer" style="color: #13092D;">this is the footer, but you can't read this text</footer>
+        <a href="../index.html">Return to main</a>
+    </main>
 </div>
+<footer id="footer" style="color: #13092D;">this is the footer, but you can't read this text</footer>
 
 
 <!-- THIS IS THE CSS !-->
 <style>
     :root {
-
-        /* colors */
-        --content: #6a00ff;
-        background-image: url("shorts_destroy_logo.jpg");
+        --sidebar-width: 240px;
     }
 
-    */ body {
-        font-family: 'Times New Roman';
+    html, body {
         margin: 0;
+        min-height: 100%;
+    }
+
+    body {
+        font-family: 'Times New Roman';
         background-color: #ffffff;
         background-size: 65px;
         color: #000000;
-        background-image: var(--body-bg-image);
+        background-image: url('shorts_destroy_logo.jpg');
     }
 
-    /* the "container" is what wraps your entire website */
-    /* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
+    * {
+        box-sizing: border-box;
+    }
+
     #container {
-        max-width: 900px;
-        /* this is the width of your layout! */
-        /* if you change the above value, scroll to the bottom
-and change the media query according to the comment! */
+        display: flex;
+        max-width: 1150px;
         margin: 0 auto;
-        /* this centers the entire page */
     }
 
-    /* the area below is for all links on your page
-EXCEPT for the navigation */
     #container a {
         color: #000000;
         font-weight: bold;
-    }
-
-    #header {
-        width: 100%;
-        background-color: #ffffff;
-        height: 100px;
-        background-image: var(--header-image);
-        background-size: 100%;
-        font-size: 40px;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    /*Navbar is currently being used as a single item serving as the large title*/
-    #navbar {
-        height: 25px;
-        background-color: #ffffff;
-        width: 100%;
-    }
-
-    #navbar ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        justify-content: space-evenly;
-    }
-
-    #navbar li {
-        padding-top: 10px;
-    }
-
-    /* navigation links*/
-    #navbar li a {
-        color: #000000;
-        /* navbar text color */
-        font-weight: 100;
-        text-decoration: none;
-        font-size: 15px;
-        /* this removes the underline */
-    }
-
-    /* navigation link when a link is hovered over */
-    #navbar li a:hover {
-        color: #a49cba;
-        text-decoration: underline;
     }
 
     li a {
@@ -125,18 +89,59 @@ EXCEPT for the navigation */
         text-decoration: underline;
     }
 
-    #flex {
+    #leftSidebar {
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        width: var(--sidebar-width);
+        height: 100vh;
+        flex-shrink: 0;
+        background-color: #ffffff;
+        padding: 30px 20px;
         display: flex;
+        flex-direction: column;
+        font-size: smaller;
     }
 
+    #siteName {
+        color: #000000;
+        font-weight: 100;
+        font-size: 32px;
+        margin: 0 0 20px 0;
+    }
 
-    /* this is the color of the main content area,
-between the sidebars! */
+    #navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 10px;
+    }
+
+    #navbar li a {
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    #sidebarSocial {
+        margin-top: auto;
+        padding-top: 20px;
+    }
+
     main {
         background-color: #ffffff;
         flex: 1;
-        padding: 20px;
-        order: 2;
+        min-width: 0;
+        padding: 30px 40px;
+    }
+
+    .pageTitle {
+        font-weight: normal;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .centerimg {
@@ -159,14 +164,10 @@ between the sidebars! */
     h2,
     h3 {
         color: #000000;
-    }
-
-    h1 {
-        font-size: 25px;
+        font-weight: normal;
     }
 
     strong {
-        /* this styles bold text */
         color: #000000;
     }
 
@@ -176,41 +177,19 @@ between the sidebars! */
         padding: 10px;
     }
 
-    /* CSS for extras */
-
-    #topBar {
-        width: 100%;
-        height: 30px;
-        padding: 10px;
-        font-size: smaller;
-        background-color: #13092D;
-    }
-
-
-    /* BELOW THIS POINT IS MEDIA QUERY */
-
-    /* so you wanna change the width of your page? 
-by default, the container width is 900px.
-in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
-"max-width" value below
-*/
-
     @media only screen and (max-width: 800px) {
-        #flex {
-            flex-wrap: wrap;
+        #container {
+            flex-direction: column;
         }
 
-        /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
+        #leftSidebar {
+            position: static;
+            width: 100%;
+            height: auto;
+        }
+
         main {
-            order: 1;
-        }
-
-        #navbar ul {
-            flex-wrap: wrap;
+            padding: 20px;
         }
     }
 </style>
