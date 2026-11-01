@@ -37,14 +37,32 @@
             <p>Electro-etching is a very easy way to etch to metal. In fact, it happens all the time unintentionally in nature. The basic process occurs when one metal has an eletric potential over another, causing electrons and ions to want to move from one to another. One metal will act as an anode and give up ions, thus becoming pitted and 'etched'. The other will be the cathode. This occurs in batteries, in metal plating processes, and in natural galvanic corrosion. In fact electro-etching sometimes is even galled galv-etching. </p>
             <p>I was super excited to try this myself. For my buddies wedding, I decided I wanted to gift him a weed-whacker with him and his soon to be wife's name engraved on the handle. </p>
             <p>I first needed to get a stensil made of their names. I used a Cricut vinyl cutter to cut a sticker to act as my stencil. The cricut is incredibly easy to use and this was complete in no time. </p>
-            <p>Next I had to purchase the ECHO 21.2cc Gas 2-Stroke Straight Shaft String Trimmer for $279 from HomeDepot. Finally, using a cheap power supply, a ball of cotton, and a solution of baking soda and salt, I was easily able to begin etching the name in to the metal. I aimed to engrave about 1 minute on each area the cotton ball covered. The process makes an audible crackling noise and I dunked the cotton swab every minute to keep the solution on the area. After 10 minutes I decided I was done and removed the vinyl stencil.</p>
+            <figure class="photo landscape"><img src="metal1.jpg" alt="metal1" loading="lazy"></figure>
+            <p>Next I had to purchase the ECHO 21.2cc Gas 2-Stroke Straight Shaft String Trimmer for $279 from HomeDepot. </p>
+            <figure class="photo landscape"><img src="metal2.jpg" alt="metal2" loading="lazy"></figure>
+            <p>Finally, using a cheap power supply, a ball of cotton, and a solution of baking soda and salt, I was easily able to begin etching the name in to the metal. I aimed to engrave about 1 minute on each area the cotton ball covered. The process makes an audible crackling noise and I dunked the cotton swab every minute to keep the solution on the area. After 10 minutes I decided I was done and removed the vinyl stencil.</p>
+            <figure class="photo portrait"><img src="metal3.jpg" alt="metal3" loading="lazy"></figure>
             <p>The results turned out amazing! I couldn't believe how easily this project went. Riley loves the string trimmer, despite gas engine lawn care equipment being banned in San Francisco. </p>
-        
+            <div class="gallery">
+                <figure class="photo landscape"><img src="metal4.jpg" alt="metal4" loading="lazy"></figure>
+                <figure class="photo landscape"><img src="metal5.jpg" alt="metal5" loading="lazy"></figure>
+                <figure class="photo portrait"><img src="metal6.jpg" alt="metal6" loading="lazy"></figure>
+            </div>
+            
             <h2>Acid etching with ferric chloride</h2>
-        <img src="try_3.jpg" class="centerimg">
+            <p>Acid etching with ferric chloride is another method to etch metal. This process involves applying a solution of ferric chloride to the metal surface, which reacts with the metal to create an etched pattern. It is commonly used for creating at home PCB layouts. I will be using this to create a piece of art also for Riley's wedding</p>
+            <p>I first needed a mask that will be applied to the metal. A mask could be anything from a vinyl sticker, to sharpie marker drawn directly to the metal. I will be using a special technique that involves re-vaporizing laser printer ink.</p>
+            <p>This technique involves printing the design on a piece of paper using a laser printer, then transferring the ink to the metal surface by applying heat and pressure. The transferred ink acts as a mask, protecting the areas where the metal should not be etched.</p>
+            <p>So I first made a pure black and white (no grey) image of my friends Riley and Talie from my favorite photo of them. This way the software uses small dots of black and white to mimick the colors grey in between, called dithering. I then flipped the image colors in order to create the mask</p>
+            <figure class="photo wide"><img src="etch1.png" alt="etch1" loading="lazy"></figure>
+            <p>This image was printed onto sticker paper with the sticker removed. The slippery side will allow the ink to jump off when heated</p>
+            <figure class="photo wide"><img src="etch2.png" alt="etch2" loading="lazy"></figure>
+            <p>Using an iron on Linen setting, I heat pressed the printed image onto my plate of brass. Some of the ink did not fully transfer, and I filled in other areas I wanted to mask with a sharpie.</p>
+            <figure class="photo portrait"><img src="etch3.jpg" alt="etch3" loading="lazy"></figure>
+            <p>Finally I soaked the brass plate in a solution of ferric chloride for an hour, with frequent shaking to keep the bare areas exposed. The final result was better than I expeted!</p>
+            <figure class="photo portrait"><img src="etch4.jpg" alt="etch4" loading="lazy"></figure>
 
-
-        <a href="../index.html">Return to main</a>
+            <a href="../index.html">Return to main</a>
     </main>
 </div>
 <footer id="footer" style="color: #13092D;">this is the footer, but you can't read this text</footer>
@@ -157,6 +175,57 @@
         padding-bottom: 10px;
     }
 
+
+    .photo {
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .photo.landscape {
+        max-width: 560px;
+        aspect-ratio: 4 / 3;
+    }
+
+    .photo.wide {
+        max-width: 560px;
+        aspect-ratio: 3 / 2;
+    }
+
+    .photo.portrait {
+        max-width: 380px;
+        aspect-ratio: 3 / 4;
+    }
+
+    /* Row of photos: flex-grow matches each aspect ratio so all share one height */
+    .gallery {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        margin: 20px 0;
+    }
+
+    .gallery .photo {
+        margin: 0;
+        max-width: none;
+        flex: 1 1 0;
+    }
+
+    .gallery .photo.landscape {
+        flex-grow: 1.333;
+    }
+
+    .gallery .photo.portrait {
+        flex-grow: 0.75;
+    }
+
     footer {
         background-color: #13092D;
         width: 100%;
@@ -195,6 +264,19 @@
 
         main {
             padding: 20px;
+        }
+
+        .gallery {
+            flex-direction: column;
+        }
+
+        .gallery .photo,
+        .gallery .photo.landscape,
+        .gallery .photo.portrait {
+            flex: none;
+            width: 100%;
+            max-width: 560px;
+            margin: 0 auto;
         }
     }
 </style>
